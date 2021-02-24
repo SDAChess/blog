@@ -35,11 +35,7 @@ jobs:
     # Step 4 - Builds the site using the latest version of Hugo
     # Also specifies the theme we want to use
     - name: Build
-      run: hugo --theme=fresh
-
-    # Step 5 - Create name file
-    - name: Create cname file
-      run: echo 'freshswift.net' > public/CNAME
+      run: hugo --theme=hello-friend-ng
 
     # Step 6 - Push our generated site to our gh-pages branch
     - name: Deploy
