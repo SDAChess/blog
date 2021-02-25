@@ -1,4 +1,4 @@
-baseurl      = "/"
+baseurl      = "https://sdachess.github.io/epita-notes/"
 title        = "SDA's Notes"
 languageCode = "en-us"
 theme        = "hello-friend-ng"
