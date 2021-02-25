@@ -1,1 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url><loc>/algo/</loc><lastmod>2021-02-24T00:00:00+00:00</lastmod></url><url><loc>/</loc><lastmod>2021-02-24T00:00:00+00:00</lastmod></url><url><loc>/algo/td1/</loc><lastmod>2021-02-24T00:00:00+00:00</lastmod></url><url><loc>/blog/</loc></url><url><loc>/series/</loc></url><url><loc>/tags/</loc></url></urlset>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://sdachess.github.io/epita-notes/algo/</loc>
+    <lastmod>2021-02-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sdachess.github.io/epita-notes/</loc>
+    <lastmod>2021-02-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sdachess.github.io/epita-notes/algo/td1/</loc>
+    <lastmod>2021-02-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sdachess.github.io/epita-notes/blog/</loc>
+  </url><url>
+    <loc>https://sdachess.github.io/epita-notes/series/</loc>
+  </url><url>
+    <loc>https://sdachess.github.io/epita-notes/tags/</loc>
+  </url>
+</urlset>
