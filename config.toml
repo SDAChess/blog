@@ -47,7 +47,7 @@ PygmentsStyle = "monokai"
 
     [languages.en.params.logo]
       logoText = "SDA's Personal Notes"
-      logoHomeLink = "/"
+      logoHomeLink = "/epita-notes/"
     # or
     #
     # path = "/img/your-example-logo.svg"
@@ -57,12 +57,12 @@ PygmentsStyle = "monokai"
   [[menu.main]]
     identifier = "maths"
     name       = "Maths"
-    url        = "/maths"
+    url        = "/maths/"
   [[menu.main]]
     identifier = "physics"
     name       = "Physics"
-    url        = "/physics"
+    url        = "/physics/"
   [[menu.main]]
     identifier = "algo"
     name       = "Algorithmic"
-    url        = "/algo"
+    url        = "/algo/"
