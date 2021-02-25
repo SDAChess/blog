@@ -194,6 +194,12 @@ code {
     background: $dark-background-secondary;
   }
 }
+code.has-jax {
+    -webkit-font-smoothing: antialiased;
+    background: inherit !important;
+    border: none !important;
+    font-size: 100%;
+}
 
 pre {
   background: #212020 !important;
