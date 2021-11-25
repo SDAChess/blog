@@ -54,14 +54,6 @@ PygmentsStyle = "monokai"
 
   # And you can even create generic menu
   [[menu.main]]
-    identifier = "maths"
-    name       = "Maths"
-    url        = "/maths/"
-  [[menu.main]]
-    identifier = "physics"
-    name       = "Physics"
-    url        = "/physics/"
-  [[menu.main]]
-    identifier = "algo"
-    name       = "Algorithmic"
-    url        = "/algo/"
+    identifier = "blog"
+    name       = "Blog"
+    url        = "/posts/"

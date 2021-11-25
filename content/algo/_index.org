@@ -1,3 +1,0 @@
-#+TITLE: Algorithmics
-
-Here you can find all my notes and corrections for the algorithmics exercices and lessons.
