@@ -1,0 +1,46 @@
+#+TITLE: README
+#+DESCRIPTION: Welcome to my blog!
+#+DATE: 2021-11-25T16:43:05+01:00
+#+SLUG: readme
+#+SUMMARY: A brief explanation of what I'm going to post here
+
+* Who am I ?
+ Hello, I'm *Simon Scatton*, a computer science student and teaching assistant
+ at EPITA, Paris.
+
+ This blog is a collection of my personnal notes and toughts and some experience
+ that emerged from the battles against the tools I use everyday.
+
+ You will find here mostly:
+ - Some tutorials about things I couldn't sort out easily (they will be listed
+   under the "Blog" section).
+ - Lectures or tips for my students (listed under the "Teaching" section).
+ - Some toughts on diverse technologies and tech stuff, mostly programming
+   languages (also in the "Blog" section).
+
+* What do I do?
+ I teach first year computer science at EPITA, a french computer science
+ university.
+ I'm a third year student and I aspire to work in theoretical computer science
+ and do a PhD. in computer science.
+
+ I'm a GNU Maintainer, I maintain the GNU XBoard package which is a chess
+ interface for chess engines.
+
+ I contribute occasionnaly on some open source projects on Github. Most of my
+ open source work is personnal projects and things I need in order to work on
+ theses projects.
+
+* How is this blog written?
+This blog is written using [[https://gohugo.io/][Hugo]] and [[https://www.orgmode.org/][Org Mode]] in Emacs. You can find the source
+code to the repository on [[https://github.com/SDAChess/blog][this repository]].
+
+* Contact me!
+If you want to reach out, you can do so by reaching out by email:
+- [[mailto://simon.scatton@outlook.fr][My personal mail]] for any questions or remarks that are related to everything
+  but my GNU open source work.
+- [[mailto://sda@gnu.org][My GNU mail]] for anything related to my work at GNU.
+Please don't hesitate if you have any questions or comment about the content of
+this blog of the stuff I put online. I'd be glad to discuss this with you.
+If you see a mistake in any blog article, please feel free to report it to my
+personnal email. That would be greatly appreciated.

@@ -1,0 +1,8 @@
+#+TITLE: {{ replace .Name "-" " " | title }}
+#+DATE: {{ .Date }}
+#+DRAFT: true
+#+DESCRIPTION:
+#+TAGS[]:
+#+KEYWORDS[]:
+#+SLUG:
+#+SUMMARY:
