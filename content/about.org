@@ -1,7 +1,7 @@
-#+TITLE: README
+#+TITLE: About
 #+DESCRIPTION: Welcome to my blog!
 #+DATE: 2021-11-25T16:43:05+01:00
-#+SLUG: readme
+#+SLUG: about
 #+SUMMARY: A brief explanation of what I'm going to post here
 
 * Who am I ?
