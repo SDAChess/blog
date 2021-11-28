@@ -1,0 +1,33 @@
+#+TITLE: Welcome
+#+DATE: 2021-11-28T20:42:43+01:00
+
+* Welcome to my blog!
+
+ Hello, I'm *Simon Scatton*, a computer science student and teaching assistant
+ at EPITA, Paris.
+
+ This blog is a collection of my personnal notes and toughts and some experience
+ that emerged from the battles against the tools I use everyday.
+
+ You will find here mostly:
+ - Some tutorials about things I couldn't sort out easily (they will be listed
+   under the "Blog" section).
+ - Some toughts on diverse technologies and tech stuff, mostly programming
+   languages (also in the "Blog" section).
+
+* Links and Socials
+
+You can find my on [[https://github.com/SDAChess][Github]] and on [[https://gitlab.com/SDAChess][Gitlab]] for my open source code.
+You can reach me at different email addresses depending on the object of
+your message:
+- [[mailto://simon.scatton@outlook.fr][My personal email]] for questions, remarks or anything you want to discuss with
+  me I'd be glad to answer.
+- [[mailto://simon.scatton@epita.fr][My EPITA email]] mostly for students and EPITA related questions and comments.
+- [[mailto://sda@gnu.org][My GNU email]] for everything that's related to my work on the GNU Project.
+
+My EPITA PGP key can be found [[/epita.pgp][here]].
+
+My personal PGP key can be found [[/personal.pgp][here]].
+
+You can also follow my [[https://twitter.com/sdachess][Twitter]] even tough I don't
+post any interesting things and they are mostly in French.
