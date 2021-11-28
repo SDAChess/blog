@@ -2,20 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/algo/</loc>
-    <lastmod>2021-02-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/maths/</loc>
-    <lastmod>2021-02-24T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/</loc>
-    <lastmod>2021-02-24T00:00:00+00:00</lastmod>
+    <lastmod>2021-11-28T20:42:43+01:00</lastmod>
   </url><url>
-    <loc>/algo/td1/</loc>
-    <lastmod>2021-02-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/maths/td1/</loc>
-    <lastmod>2021-02-24T00:00:00+00:00</lastmod>
+    <loc>/about/</loc>
+    <lastmod>2021-11-25T16:43:05+01:00</lastmod>
   </url><url>
     <loc>/blog/</loc>
   </url><url>
