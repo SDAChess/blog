@@ -1,3 +1,4 @@
+baseURL      = "/"
 title        = "SDA's Notes"
 relativeURLs = true
 languageCode = "en-us"
@@ -51,7 +52,7 @@ paginate     = 10
   [[menu.main]]
     identifier = "about"
     name       = "About"
-    url        = "/about"
+    url        = "/about/"
   [[menu.main]]
     identifier = "blog"
     name       = "Blog"
