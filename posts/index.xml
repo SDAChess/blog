@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Welcome on SDA&#39;s Notes</title>
-    <link>/</link>
-    <description>Recent content in Welcome on SDA&#39;s Notes</description>
+    <title>Posts on SDA&#39;s Notes</title>
+    <link>/posts/</link>
+    <description>Recent content in Posts on SDA&#39;s Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Nov 2021 20:42:43 +0100</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Jun 2022 17:39:00 +0200</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Configuring an ethernet switch to access the lacoB network through a
 Wifi Hotspot</title>
@@ -15,15 +15,6 @@ Wifi Hotspot</title>
       
       <guid>/posts/getting_ethernet_from_wifi_hotspot/</guid>
       <description>We configure a DHCP server after having spoothed the mac address of a wifi hotspot.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>/about/</link>
-      <pubDate>Thu, 25 Nov 2021 16:43:05 +0100</pubDate>
-      
-      <guid>/about/</guid>
-      <description>A brief explanation of what I&amp;#39;m going to post here</description>
     </item>
     
   </channel>
