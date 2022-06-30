@@ -14,7 +14,7 @@ Wifi Hotspot</title>
       <pubDate>Thu, 30 Jun 2022 17:39:00 +0200</pubDate>
       
       <guid>/posts/getting_ethernet_from_wifi_hotspot/</guid>
-      <description>We configure a DHCP server after having spoothed the mac address of a wifi hotspot.</description>
+      <description>We configure a DHCP server after having spoofed the mac address of a wifi hotspot.</description>
     </item>
     
     <item>
