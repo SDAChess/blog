@@ -19,6 +19,9 @@ network, so an idea sprout in my head. What if I just used that ethernet cable
 to connect to my computer or some kind of switch? Then I would be able to access
 the Internet. But that would be too easy.
 
+[fn:1] The name is kept secret to avoid any futher litigations, but the sharpest
+knifes in the kitchen would get it.
+
 * Going around MAC filtering
 The first obstacle that I encountered was to be able to get an IP from the
 network. It seems that the wifi hotspot where MAC filtered meaning that you
@@ -30,10 +33,10 @@ hotspot MAC addresses are written just on the back of the hotspot, that wasn't
 too hard to find. We had the MAC address of the Wifi hotspot, now we try to
 connect to the network by spoofing our own MAC address with the one of the hotspot.
 
-Throughout this article we will use `systemd-networkd` to configure the network
-interfaces. Our system is composed of three ethernet ports: `enp3s0` that is
-directly connected to the wifi hotspot ethernet cable. `enp6s0f1` that is
-connected to our ethernet switch. First thing is to configure `enp3s0` for MAC
+Throughout this article we will use ~systemd-networkd~ to configure the network
+interfaces. Our system is composed of three ethernet ports: ~enp3s0~ that is
+directly connected to the wifi hotspot ethernet cable. ~enp6s0f1~ that is
+connected to our ethernet switch. First thing is to configure ~enp3s0~ for MAC
 spoofing using this piece of configuration:
 
 #+BEGIN_SRC
@@ -49,6 +52,45 @@ NamePolicy=kernel database onboard slot path
 #+END_SRC
 
 After having restarted the network service, we now have internet and an IP address!
+* Sharing the network with a switch
+** Bridging the interface
+We now need to create a bridge for the network to be able to share our
+connection with the output ethernet cable interface ~enp6s0f1~. To do so we
+configure the folowing bridge:
+#+BEGIN_SRC
+[Match]
+Name=br0
 
-[fn:1] The name is kept secret to avoid any futher litigations, but the sharpest
-knifes in the kitchen would get it.
+[Network]
+DHCP=true
+
+[Link]
+MACAddress=f4:ea:b5:90:00:80
+
+[NetDev]
+Name=br0
+Kind=bridge
+#+END_SRC
+We then connect both interfaces to the bridge by changing the configurations of
+~enp3s0~ and ~enp6s0f1~ to :
+#+BEGIN_SRC
+[Match]
+Name=enp3s0
+
+[Network]
+Bridge=br0
+#+END_SRC
+
+#+BEGIN_SRC
+[Match]
+Name=enp6s0f1
+
+[Network]
+Bridge=br0
+#+END_SRC
+Now both interfaces are connected to the bridge that acts as a single network
+card with the right spoofed MAC address. You just need to setup a DHCP server
+and you will be able to hook up a switch to ~enp6s0f1~.
+** DHCP Server
+This section is beyond the scope of this article and will get its own writeup in
+a next blog article! Cheers!
