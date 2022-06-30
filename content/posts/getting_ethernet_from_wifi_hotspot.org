@@ -1,0 +1,29 @@
+#+TITLE: Configuring an ethernet switch to access the lacoB network through a
+#+TITLE: Wifi Hotspot
+#+DATE: 2022-06-30T17:39:00+02:00
+#+DRAFT: false
+#+SLUG:
+#+SUMMARY: We configure a DHCP server after having spoothed the mac address of a wifi hotspot.
+
+In my school, the network is managed by an entity called the *lacoB*[fn:1]. The lacoB
+is usually a bit slow to setup things and there is a lot of bureaucracy involved
+to get the tiniest thing done. It has been several month since *L'Atelier*
+(which I am a part of) has asked the lacoB through the usual channels to install
+an ethernet connection so that we could connect our computers to the network.
+But we are still waiting for an answer. That's when I decided to take matters
+into my own hands.
+
+You see, we have these Wifi hotspots that are installed and are linked and
+powered through *POE*. So, we have an ethernet cable, connected to some sort of
+network, so an idea sprout in my head. What if I just used that ethernet cable
+to connect to my computer or some kind of switch? Then I would be able to access
+the Internet. But that would be too easy.
+
+* Going around MAC filtering
+The first obstacle that I encountered was to be able to get an IP from the
+network. It seems that the wifi hotspot where MAC filtered meaning that you
+could not get an IP, redering use the of the network impossible.
+
+
+[fn:1] The name is kept secret to avoid any futher litigations, but the sharpest
+knifes in the kitchen would get it.
