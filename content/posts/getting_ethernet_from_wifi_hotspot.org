@@ -3,7 +3,7 @@
 #+DATE: 2022-06-30T17:39:00+02:00
 #+DRAFT: false
 #+SLUG:
-#+SUMMARY: We configure a DHCP server after having spoothed the mac address of a wifi hotspot.
+#+SUMMARY: We configure a DHCP server after having spoofed the mac address of a wifi hotspot.
 
 In my school, the network is managed by an entity called the *lacoB*[fn:1]. The lacoB
 is usually a bit slow to setup things and there is a lot of bureaucracy involved
@@ -25,11 +25,30 @@ network. It seems that the wifi hotspot where MAC filtered meaning that you
 could not get an IP, redering use the of the network impossible. The idea behind
 MAC filtering is that since every device/network card have a single MAC address,
 allowing only known MAC addresses to connect to the network is supposed to
-increase security. But, MAC addresses can be spoothed and since most wifi
+increase security. But, MAC addresses can be spoofed and since most wifi
 hotspot MAC addresses are written just on the back of the hotspot, that wasn't
 too hard to find. We had the MAC address of the Wifi hotspot, now we try to
-connect to the network by spoothing our own MAC address with the one of the hotspot.
+connect to the network by spoofing our own MAC address with the one of the hotspot.
 
+Throughout this article we will use `systemd-networkd` to configure the network
+interfaces. Our system is composed of three ethernet ports: `enp3s0` that is
+directly connected to the wifi hotspot ethernet cable. `enp6s0f1` that is
+connected to our ethernet switch. First thing is to configure `enp3s0` for MAC
+spoofing using this piece of configuration:
+
+#+BEGIN_SRC
+[Match]
+Name=enp3s0
+
+[Network]
+DHCP=true
+
+[Link]
+MACAddress=f4:ea:b5:90:00:80
+NamePolicy=kernel database onboard slot path
+#+END_SRC
+
+After having restarted the network service, we now have internet and an IP address!
 
 [fn:1] The name is kept secret to avoid any futher litigations, but the sharpest
 knifes in the kitchen would get it.
